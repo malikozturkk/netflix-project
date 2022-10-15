@@ -10,6 +10,7 @@ interface Props {
 function Row({title, movies}: Props) {
     const rowRef = useRef<HTMLDivElement>(null)
     const [isMoved, setIsMoved] = useState(false)
+    /* not: isMoved değeri ile gizle göster olayını ve click ile scroll olayını burda yapar */
     const handleClick = (direction: string) => {
         setIsMoved(true)
         if (rowRef.current) {
