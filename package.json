@@ -6,13 +6,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@heroicons/react": "^1.0.6",
+    "@mui/material": "^5.10.9",
     "firebase": "^9.12.1",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-hook-form": "^7.37.0",
+    "react-hot-toast": "^2.4.0",
     "react-icons": "^4.4.0",
+    "react-player": "^2.11.0",
+    "recoil": "^0.7.6",
     "tailwind-scrollbar": "^2.1.0-preview.0",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
