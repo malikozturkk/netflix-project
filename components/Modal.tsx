@@ -73,25 +73,6 @@ function Modal() {
     toast.dismiss()
   }
 
-  // Kullanıcı listesindeki tüm filmleri bulun
-  useEffect(() => {
-    if (user) {
-      return onSnapshot(
-        collection(db, 'customers', user.uid, 'myList'),
-        (snapshot) => setMovies(snapshot.docs)
-      )
-    }
-  }, [db, movie?.id])
-
-  // Filmin zaten kullanıcı listesinde olup olmadığını kontrol edin
-  useEffect(
-    () =>
-      setAddedToList(
-        movies.findIndex((result) => result.data().id === movie?.id) !== -1
-      ),
-    [movies]
-  )
-
   const handleList = async () => {
     if (addedToList) {
       setAddedToList(!addedToList)
