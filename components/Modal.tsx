@@ -15,11 +15,8 @@ import { Element, Genre, Movie } from '../typings'
 import MuiModal from '@mui/material/Modal'
 import {
   collection,
-  deleteDoc,
-  doc,
   DocumentData,
   onSnapshot,
-  setDoc,
 } from 'firebase/firestore'
 import { db } from '../firebase'
 import useAuth from '../hooks/useAuth'
@@ -97,10 +94,7 @@ function Modal() {
 
   const handleList = async () => {
     if (addedToList) {
-      await deleteDoc(
-        doc(db, 'customers', user!.uid, 'myList', movie?.id.toString()!)
-      )
-
+      setAddedToList(!addedToList)
       toast(
         `${movie?.title || movie?.original_name} has been removed from My List`,
         {
@@ -109,13 +103,7 @@ function Modal() {
         }
       )
     } else {
-      await setDoc(
-        doc(db, 'customers', user!.uid, 'myList', movie?.id.toString()!),
-        {
-          ...movie,
-        }
-      )
-
+      setAddedToList(!addedToList)
       toast(
         `${movie?.title || movie?.original_name} has been added to My List.`,
         {
