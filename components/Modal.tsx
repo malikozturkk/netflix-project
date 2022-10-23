@@ -11,15 +11,8 @@ import {
   VolumeUpIcon,
   XIcon,
 } from '@heroicons/react/outline'
-import { Element, Genre, Movie } from '../typings'
+import { Element, Genre } from '../typings'
 import MuiModal from '@mui/material/Modal'
-import {
-  collection,
-  DocumentData,
-  onSnapshot,
-} from 'firebase/firestore'
-import { db } from '../firebase'
-import useAuth from '../hooks/useAuth'
 import toast, { Toaster } from 'react-hot-toast'
 
 function Modal() {
@@ -29,8 +22,6 @@ function Modal() {
   const [muted, setMuted] = useState(true)
   const [genres, setGenres] = useState<Genre[]>([])
   const [addedToList, setAddedToList] = useState(false)
-  const { user } = useAuth()
-  const [movies, setMovies] = useState<DocumentData[] | Movie[]>([])
 
   const toastStyle = {
     background: 'white',
