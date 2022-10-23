@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS Example
+# Next.js + TypeScript + Tailwind CSS Example
 
 Selamlar TypeScript, NextJS ve Tailwind CSS kullanarak yapmış olduğum netflix clone projesidir 🙂
 
