@@ -2,6 +2,7 @@ import { Movie } from "../typings"
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline"
 import Thumbnail from "../components/Thumbnail"
 import { useRef, useState } from "react"
+import ErrorBoundary from "../components/ErrorBoundary"
 
 interface Props {
     title: string
@@ -32,7 +33,9 @@ function Row({title, movies}: Props) {
 
             <div ref={rowRef} className="flex scrollbar-hide items-center space-x-0.5 overflow-x-scroll scrollbar-hide md:space-x-2.5 md:p-2">
                 {movies.map((movie) => (
-                    <Thumbnail key={movie.id} movie={movie} />
+                    <ErrorBoundary>
+                        <Thumbnail key={movie.id} movie={movie} />
+                    </ErrorBoundary>
                 ))}
             </div>
 

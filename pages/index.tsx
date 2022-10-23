@@ -9,6 +9,7 @@ import { useRecoilValue } from 'recoil'
 import { useState } from 'react'
 import { modalState } from '../atoms/modalAtom'
 import Modal from '../components/Modal'
+import ErrorBoundary from "../components/ErrorBoundary"
 
 
 interface Props {
@@ -56,7 +57,7 @@ const Home = ({
           <Row title="Documentaries" movies={documentaries} />
         </section>
       </main>
-      {showModal && <Modal />}
+      {showModal && <ErrorBoundary> <Modal /></ErrorBoundary>}
     </div>
 
   )
