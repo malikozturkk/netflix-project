@@ -28,7 +28,7 @@ function Banner({ netflixOriginals }: Props) {
             fill
             sizes="initial"
             alt="Movie Image"
-            src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`} 
+            src="https://image.tmdb.org/t/p/original/edOt2jNyCbb8SQSvulD2sRRJhmA.jpg" 
             layout="fill"
             objectFit="cover"
             />
