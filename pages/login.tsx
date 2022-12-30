@@ -32,7 +32,6 @@ function Login() {
       </Head>
       <Image
         sizes="initial"
-        fill
         alt='Movie Image'
         src="https://rb.gy/p2hphi"
         layout="fill"
