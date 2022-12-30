@@ -31,6 +31,9 @@ function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Image
+        sizes="initial"
+        fill
+        alt='Movie Image'
         src="https://rb.gy/p2hphi"
         layout="fill"
         className="-z-10 !hidden opacity-60 sm:!inline"
