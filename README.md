@@ -2,7 +2,7 @@
 
 Selamlar TypeScript, NextJS ve Tailwind CSS kullanarak yapmış olduğum netflix clone projesidir 🙂
 
-Canlı Demo Link : https://netflix-project-3g20noeky-malikozturkk.vercel.app/login
+Canlı Demo Link : https://netflix-project-mocha.vercel.app/Login
 
 ## Deploy your own
 
