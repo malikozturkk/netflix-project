@@ -5,7 +5,7 @@ Selamlar TypeScript, NextJS ve Tailwind CSS kullanarak yapmış olduğum netflix
 Canlı Demo Link : https://netflix-project-mocha.vercel.app/login
 
 test mail : malikozturkk@gmail.com
-test şifre: 123456
+test şifre: 123456 (veya üye olarak devam edebilirsiniz.)
 
 ## Deploy your own
 
