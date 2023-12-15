@@ -1,11 +1,11 @@
 # Next.js + TypeScript + Tailwind CSS Example
 
-Selamlar TypeScript, NextJS ve Tailwind CSS kullanarak yapmış olduğum netflix clone projesidir 🙂
+Hi, this is a Netflix clone project I made using TypeScript, NextJS, and Tailwind CSS 🙌🏻
 
-Canlı Demo Link : https://netflix-project-mocha.vercel.app/login
+Live Demo Link : https://netflix-project-mocha.vercel.app/login
 
-test mail : malikozturkk@gmail.com
-test şifre: 123456 (veya üye olarak devam edebilirsiniz.)
+Test Mail : malikozturkk@gmail.com
+Test Password: 123456 (or or you can continue as a member.)
 
 ## Deploy your own
 
