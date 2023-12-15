@@ -5,7 +5,7 @@ Hi, this is a Netflix clone project I made using TypeScript, NextJS, and Tailwin
 Live Demo Link : https://netflix-project-mocha.vercel.app/login
 
 Test Mail : malikozturkk@gmail.com
-Test Password: 123456 (or or you can continue as a member.)
+Test Password: 123456 (or you can continue as a member.)
 
 ## Deploy your own
 
